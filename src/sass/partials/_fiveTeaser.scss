@@ -1,0 +1,79 @@
+.new-5-teaser-module {
+  background-color: #FFF1EC;
+  .module-5-teaser-title {
+    text-align: center;
+    padding: 20px 0;
+    margin-left: 0px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .module-5-teaser-desc {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .carousel-outer-5Teaser {
+    @media only screen and (min-width: 1024px) {
+      margin: 40px 45px 60px;
+      overflow: hidden;
+    }
+    @media only screen and (max-width: 1023px) {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      margin-left: 20px;
+      margin-right: 0px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .carousel-inner-con {
+      display: flex;
+      .carousel-card-con {
+        width: auto;
+        @media only screen and (min-width: 1024px) {
+          width: 20%;
+        }
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        &:first-child {
+          margin-left: 0px;
+          //margin-right: 20px;
+        }
+        &:nth-child(5) {
+          //margin-left: 20px;
+          margin-right: 0px;
+        }
+        &:nth-child(n+6) {
+          display: none;
+        }
+
+        .new-5-teaser-card-img-con {
+          margin: 0 auto;
+          text-align: center;
+          //width: 20%;
+          @media only screen and (max-width: 1023px) {
+            width: 185px;
+          }
+          .hp-teaser-wrapper {
+            text-align: left !important;
+            .hp-tile-module-teaser__header {
+              margin-top: 10px;
+              font-size: 20px;
+              color: #000;
+              font-weight: normal;
+              letter-spacing: 0;
+            }
+            .hp-tile-module-teaser__text {
+              font-size: 14px;
+              color: #000;
+              text-decoration: underline;
+              margin-bottom: 16px;
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

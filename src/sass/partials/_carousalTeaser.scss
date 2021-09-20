@@ -1,0 +1,77 @@
+.new-teaser-module {
+  background-color: #F4EFEB;
+  .module-teaser-title {
+    text-align: center;
+    padding: 20px 0;
+    margin-left: 0px;
+  }
+  .module-teaser-desc {
+    text-align: center;
+  }
+  .carousel-outer-Teaser {
+    @media only screen and (min-width: 1024px) {
+      margin: 40px 45px 0;
+    }
+    @media only screen and (max-width: 1023px) {
+      margin-left: 20px;
+      margin-right: 0px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    overflow: hidden;
+    .nav {
+      position: absolute;
+      .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 15px;
+      }
+      .arrow.next {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        position: absolute;
+        left: 90vw;
+      }
+      .arrow.prev {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        position: absolute;
+        left: 0;
+      }
+    }
+    .carousel-inner-Teaser {
+      list-style: none;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      .carousel-card-con {
+        float: left;
+        width: 100vw;
+        .new-teaser-card-img-con {
+          //margin: 0 auto;
+          text-align: center;
+          .hp-teaser-wrapper {
+            text-align: left !important;
+            margin-left: 20%;
+            .hp-tile-module-teaser__header {
+              margin-top: 10px;
+              font-size: 20px;
+              color: #000;
+              font-weight: normal;
+              letter-spacing: 0;
+            }
+            .hp-tile-module-teaser__text {
+              font-size: 14px;
+              color: #000;
+              text-decoration: underline;
+              margin-bottom: 16px;
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

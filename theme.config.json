@@ -1,0 +1,26 @@
+{
+  "name": "my-theme",
+  "styles": [
+    {
+      "type": "webpack",
+      "src": "src/sass/my-theme.scss"
+    }
+  ],
+  "scripts": [
+    {
+      "type": "webpack",
+      "src": [
+        "src/js/my-theme.js",
+        "src/js/one-teaser-carousal.js"
+      ],
+      "inHead": true
+    }
+  ],
+  "l10n": {
+    "bundleEncoding": "UTF-8",
+    "bundleNames": [
+      "My-theme",
+      "Bricks"
+    ]
+  }
+}

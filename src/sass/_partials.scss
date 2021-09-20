@@ -1,0 +1,14 @@
+// Dependency variables
+@import "?smart-import-variables";
+// Dependency styles
+@import "?smart-import-partials";
+
+// Own partials
+@import "partials/header";
+@import "partials/footer";
+@import "partials/navigation";
+@import "partials/teaser";
+@import "partials/oneTeaser";
+@import "partials/threeTeaser";
+@import "partials/fiveTeaser";
+@import "partials/carousalTeaser";
